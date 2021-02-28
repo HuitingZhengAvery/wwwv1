@@ -32,33 +32,33 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  .loadingpage{
-    margin: 0;
-    width:100%; 
-    height: 100%;
-    position: fixed;
-    top:0;
-    left: 0;
-    z-index: 100;
-    background: #ffffff;
-    .loadpic{
-      width: 64px;
-      height: 64px;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left:0;
-      right:0;
-      margin: auto;
-      i{
-        display: block;
-        float: left;
-        width: 6px;
-        height: 50px;
-        background: #204837;
-        margin: 0 2px;
-        transform: scaleY(0.4);
-      }
-    }   
+.loadingpage{
+  margin: 0;
+  width:100%; 
+  height: 100%;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 100;
+  background: #ffffff;
+  .loadpic{
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right:0;
+    margin: auto;
+    i{
+      display: block;
+      float: left;
+      width: 6px;
+      height: 50px;
+      background: #204837;
+      margin: 0 2px;
+      transform: scaleY(0.4);
+    }
   }   
+}   
 </style><!-- Add "scoped" attribute to limit CSS to this component only -->

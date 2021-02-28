@@ -2,13 +2,11 @@
   <div class="diarywords">
     <h3>{{ msg }}</h3>
     <div class="bnr">
-      <div class="bnr_npt">
-        <!--eslint-disable-next-line-->
+      <div class="bnr_npt"><!--eslint-disable-next-line-->
         <button v-for="(key, index) in lst_clk" @click="chs_rtl({key})">{{key}}</button>
       </div>
     </div>
-    <div class="ctt">
-      <!--eslint-disable-next-line-->
+    <div class="ctt"><!--eslint-disable-next-line-->
       <div class="lns" v-for="(line) in lst_rtc"><a>{{line}}</a></div>
     </div>
   </div>
@@ -16,6 +14,7 @@
 
 <script>
 import Rtl from '../assets/prm_rtl.js' 
+
 export default {
   name: "DiaryWords",  
   props: {msg: String,},  
@@ -71,7 +70,8 @@ export default {
         background-color: #ffffff;
       }
       button:hover{
-        color: #EEEEEE;
+        cursor: pointer;
+        color: #F5F5F5;
         background-color: #C4D9A9;
       }
     }
