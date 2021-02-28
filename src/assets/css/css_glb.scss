@@ -1,0 +1,44 @@
+@charset "UTF-8";
+body {
+  background-color: #E0E0E0;
+  margin: 0px;
+}
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  background-color: #ffffff;
+  color: #424242;
+}
+#nav {
+  padding: 30px 5%;
+  a {
+    font-weight: bold;
+    color: #424242;
+    &.router-link-exact-active {
+      color: #77A753;
+    }
+  }
+  a:hover{ // 等同于 animation: turncolor 1.5s 1;
+    animation-name: turncolor;
+    animation-duration:1.5s; 
+    animation-iteration-count: infinite;    // 也可以是某个数字代表循环次数
+  }
+}   // 导航栏
+@keyframes turncolor{20%{color:#D1887E}}  // 变红再还原
+
+.loadingpage {
+  .loadpic {
+    i{animation: load 1.2s infinite;}
+    i:nth-child(1){animation-delay:0.1s }
+    i:nth-child(2){animation-delay:0.2s }
+    i:nth-child(3){animation-delay:0.3s }
+    i:nth-child(4){animation-delay:0.4s }
+    i:nth-child(5){animation-delay:0.5s }
+  } // pages loading effects - loading picture
+}   // pages loading effects for /src/components/LoadingPage.vue
+@keyframes load{
+    0%,40%,100%{transform: scaleY(0.4);}
+    20%{transform:scaleY(1);background: #C4D9A9; }
+}   // 页面缓冲动画 page loading effects
