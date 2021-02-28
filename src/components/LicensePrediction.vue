@@ -3,8 +3,8 @@
     <h3>{{ msg }}</h3>
     <div class='bnr'>
       <div class='bnr_npt'>
-        <!-- <input type='input' placeholder='本期编码' v-model="vls_ppl" @change="tecVls()"/>
-        <input type='input' placeholder='本期放牌' v-model="vls_plt" @change="tecVls()"/> -->
+        <!-- <input type='input' placeholder='本期编码' v-model="vls_ppl" @change="tecVls()"/> -->
+        <!-- <input type='input' placeholder='本期放牌' v-model="vls_plt" @change="tecVls()"/> -->
         <input type='input' placeholder='初次公布' v-model="vls_frs" @change="tecVls()"/>
         <input type='input' placeholder='二次公布' v-model="vls_scd" @change="tecVls()"/>
         <input type='button' title="输入前面两次报价后点这里预测" id="npt-btn" :value="vls_btn_npt[0]" :disabled="vls_btn_npt[1]" @click="sndVls()"/>
@@ -18,6 +18,7 @@
 <script>
 import * as echarts from 'echarts' 
 import Prm from '../assets/css/css_prm.js' 
+
 export default {
   name: "LicensePrediction",    
   props: { msg: String,},
@@ -119,7 +120,7 @@ export default {
           legend: {type:'scroll', x:'center', y:'top', top:'8%'}, // selected: {},
           tooltip: {trigger:'axis', axisPointer:{type:'cross'},},
           toolbox: {
-              orient:'vertical', x:'left', y:'center',
+              orient:'horizontal', x:'right', y:'top',
               feature: {  magicType:{type:['line', 'bar', 'stack', 'tiled']},
                           restore:{show:true},
                           dataView:{show:true, readOnly:false},
@@ -148,7 +149,7 @@ export default {
 
       // 使用刚指定的配置项和数据显示图表。
       myChart.setOption(option, true);
-    },  // build lines chart
+    },    // build lines chart
     tecVls(){
       if(this.vls_ppl !=''&this.vls_plt !=''&this.vls_frs !=''&this.vls_scd !=''){
         this.vls_btn_npt[1] = false
@@ -172,10 +173,10 @@ export default {
       this.lst_licensepredict[flt_len-1][5] = parseInt(this.mdl_prm_avg[0]*1 +this.mdl_prm_avg[1]*x1 +this.mdl_prm_avg[2]*x2 +this.mdl_prm_avg[3]*x3 +this.mdl_prm_avg[4]*x4 +this.mdl_prm_avg[5]*x5 +this.mdl_prm_avg[6]*x6);  // 预测均价
       this.lst_licensepredict[flt_len-1][6] = parseInt(this.lst_licensepredict[flt_len-1][5] + this.mdl_prm_std[1]);
       this.LnsCht('div-cht', this.lst_licensepredict, 'Prediction of License Plate Price');
-    },  // calculation and charting again
+    },    // calculation and charting again
     rldWnd(){
       window.location.reload();
-    }
+    }     // reloading echarts because unknown error
   },
   mounted() {
     this.LnsCht('div-cht', this.lst_licensepredict, 'License Plate Price');
@@ -207,8 +208,8 @@ export default {
         background-color: #C4D9A9;
       }
       #npt-btn {
-        width:6%;
-        min-width: 40px;
+        width:8%;
+        min-width: 50px;
       }
       #npt-btn:hover{
         cursor: pointer;
@@ -216,8 +217,8 @@ export default {
       }
       #npt-rld {
         color: #D1887E;
-        width:6%;
-        min-width: 40px;
+        width:8%;
+        min-width: 50px;
       }
       #npt-rld:hover{
         cursor:pointer;
@@ -226,6 +227,5 @@ export default {
       }
     }
   }   // 对第一部分输入栏的样式设置
-
-  }   
+}   
 </style><!-- Add "scoped" attribute to limit CSS to this component only -->

@@ -38,6 +38,16 @@ body {
     i:nth-child(5){animation-delay:0.5s }
   } // pages loading effects - loading picture
 }   // pages loading effects for /src/components/LoadingPage.vue
+.loadingpart {
+  .loadpic {
+    i{animation: load 1.2s infinite;}
+    i:nth-child(1){animation-delay:0.1s }
+    i:nth-child(2){animation-delay:0.2s }
+    i:nth-child(3){animation-delay:0.3s }
+    i:nth-child(4){animation-delay:0.4s }
+    i:nth-child(5){animation-delay:0.5s }
+  } // pages loading effects - loading picture
+}   // pages loading effects for /src/components/LoadingPage.vue
 @keyframes load{
     0%,40%,100%{transform: scaleY(0.4);}
     20%{transform:scaleY(1);background: #C4D9A9; }

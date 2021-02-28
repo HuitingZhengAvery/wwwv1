@@ -23,26 +23,26 @@
 </template>
 
 <script>
-export default {
-  name: "HelloWorld",
-  props: {
-    msg: String,
-  },
-};
+  export default {
+    name: "HelloWorld",
+    props: {
+      msg: String,
+    },
+  };
 </script>
 
 <style scoped lang="scss">
-.hello {
-  padding: 0 5%;
-  .ctt {
-    margin: 30px 0 0 0;
-    text-align: right;
-    p {
-      font-size: 14px;
-      a {
-        color: #77A753;
+  .hello {
+    padding: 0 5%;
+    .ctt {
+      margin: 30px 0 0 0;
+      text-align: right;
+      p {
+        font-size: 14px;
+        a {
+          color: #77A753;
+        }
       }
     }
   }
-}
 </style><!-- Add "scoped" attribute to limit CSS to this component only -->

@@ -7,14 +7,14 @@
 </template>
 
 <script>
-import DiaryWords from "@/components/DiaryWords.vue"; // @ is an alias to /src
-import FooterPart from "@/components/FooterPart.vue";
+  import DiaryWords from "@/components/DiaryWords.vue"; // @ is an alias to /src
+  import FooterPart from "@/components/FooterPart.vue";
 
-export default {
-  name: "Reference",
-  components: {
-    DiaryWords,
-    FooterPart,
-  },
-};
+  export default {
+    name: "Reference",
+    components: {
+      DiaryWords,
+      FooterPart,
+    },
+  };
 </script>

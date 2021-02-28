@@ -6,14 +6,14 @@
 </template>
 
 <script>
-import LicensePrediction from "@/components/LicensePrediction.vue"; // @ is an alias to /src
-import FooterPart from "@/components/FooterPart.vue";
+  import LicensePrediction from "@/components/LicensePrediction.vue"; // @ is an alias to /src
+  import FooterPart from "@/components/FooterPart.vue";
 
-export default {
-  name: "LicensePlate",
-  components: {
-    LicensePrediction,
-    FooterPart,
-  },
-};
+  export default {
+    name: "LicensePlate",
+    components: {
+      LicensePrediction,
+      FooterPart,
+    },
+  };
 </script>

@@ -6,14 +6,14 @@
 </template>
 
 <script>
-import BaiduOcr from "@/components/BaiduOcr.vue"; // @ is an alias to /src
-import FooterPart from "@/components/FooterPart.vue";
+  import BaiduOcr from "@/components/BaiduOcr.vue"; // @ is an alias to /src
+  import FooterPart from "@/components/FooterPart.vue";
 
-export default {
-  name: "Ocr",
-  components: {
-    BaiduOcr,
-    FooterPart,
-  },
-};
+  export default {
+    name: "Ocr",
+    components: {
+      BaiduOcr,
+      FooterPart,
+    },
+  };
 </script>

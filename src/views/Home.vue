@@ -8,16 +8,16 @@
 </template>
 
 <script>
-import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
-import LoadingPage from "@/components/LoadingPage.vue";
-import FooterPart from "@/components/FooterPart.vue";
+  import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
+  import LoadingPage from "@/components/LoadingPage.vue";
+  import FooterPart from "@/components/FooterPart.vue";
 
-export default {
-  name: "Home",
-  components: {
-    HelloWorld,
-    LoadingPage,
-    FooterPart,
-  },
-};
+  export default {
+    name: "Home",
+    components: {
+      HelloWorld,
+      LoadingPage,
+      FooterPart,
+    },
+  };
 </script>

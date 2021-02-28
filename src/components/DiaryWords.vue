@@ -3,7 +3,7 @@
     <h3>{{ msg }}</h3>
     <div class="bnr">
       <div class="bnr_npt">
-      <!--eslint-disable-next-line-->
+        <!--eslint-disable-next-line-->
         <button v-for="(key, index) in lst_clk" @click="chs_rtl({key})">{{key}}</button>
       </div>
     </div>
