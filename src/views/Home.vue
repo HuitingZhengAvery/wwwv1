@@ -1,6 +1,10 @@
 <template>
   <div class="home">
-    <img alt="home logo" style="max-height: 100px" src="../assets/img/logo01.gif" />
+    <img
+      alt="home logo"
+      style="max-height: 100px"
+      src="../assets/img/logo01.gif"
+    />
     <LoadingPage />
     <HelloWorld msg="Welcome to xzzsmeadow.com" />
     <FooterPart msg="vue-cli, echarts, flask, python, mongodb" />

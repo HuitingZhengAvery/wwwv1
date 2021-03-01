@@ -3,9 +3,6 @@ import App from "./App.vue";
 import "./registerServiceWorker";
 import router from "./router";
 import store from "./store";
-import './assets/css/css_glb.scss'
+import "./assets/css/css_glb.scss";
 
-createApp(App)
-  .use(store)
-  .use(router)
-  .mount("#app");
+createApp(App).use(store).use(router).mount("#app");
