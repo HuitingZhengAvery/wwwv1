@@ -4,8 +4,8 @@
     <router-link to="/ocr">Ocr</router-link> |
     <router-link to="/licenseplate">LicensePlate</router-link> |
     <router-link to="/reference">Reference</router-link>
+    <router-view></router-view>
   </div>
-  <router-view />
 </template>
 
 <style lang="scss"></style>
